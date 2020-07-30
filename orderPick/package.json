@@ -1,0 +1,26 @@
+{
+  "name": "orderpick",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "keywords": [
+    "WMS",
+    "PICK",
+    "ORDER"
+  ],
+  "engines": {
+    "node": ">=11.0.0"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest --detectOpenHandles"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19",
+    "xlsx": "^0.16.3"
+  }
+}
