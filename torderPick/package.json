@@ -1,0 +1,31 @@
+{
+  "name": "torderpick",
+  "version": "1.0.0",
+  "description": "order pick on typescript",
+  "main": "dist/server.js",
+  "scripts": {
+    "watch-server": "nodemon --watch src -e ts,tsx --exec ts-node src/server.ts",
+    "build-ts": "tsc",
+    "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "serve": "node dist/server.js",
+    "build": "npm run lint && npm run build-ts && npm run copy-static-assets",
+    "start": "npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "order"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/node": "^14.0.27",
+    "koa": "^2.13.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "nodeman": "^1.1.2",
+    "ts-node": "^8.10.2"
+  }
+}
